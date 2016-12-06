@@ -4,9 +4,18 @@
   "description": "阿希的date工具",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src/index.js -o index.js && webpack"
   },
-  "keywords": ["aximario", "ax-date", "阿希Mario"],
+  "keywords": [
+    "aximario",
+    "ax-date",
+    "阿希Mario"
+  ],
   "author": "aximario <aximario@qq.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-latest": "^6.16.0",
+    "webpack": "^1.13.3"
+  }
 }
